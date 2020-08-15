@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('getAllProjects', 'ProjectController@getAllProjects');
+Route::get('getRecent10', 'ProjectController@getRecent10');
+Route::get('insertProject', 'ProjectController@insertProject');
+Route::get('updateProject', 'ProjectController@updateProject');
+Route::get('deleteProject', 'ProjectController@deleteProject');
+Route::get('getActiveProjects', 'ProjectController@getActiveProjects');
+
+
+
+
